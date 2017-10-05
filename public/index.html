@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="wobble.gif" type="image/gif" >
+  <title>draw</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <canvas class="board"></canvas>
+
+  <div class="rgb-picker color-picker">
+    <div class="sliders">
+      <div class="red-slider short-slider">
+        <input class="bar" type="range" id="rangeinput" value="250" max="255" />
+      </div>
+      <div class="green-slider short-slider">
+        <input class="bar" type="range" id="rangeinput" value="50" max="255" />
+      </div>
+      <div class="blue-slider short-slider">
+        <input class="bar" type="range" id="rangeinput" value="50" max="255" />
+      </div>
+    </div>
+    <div class="color-preview"></div>
+  </div>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+
+</html>
